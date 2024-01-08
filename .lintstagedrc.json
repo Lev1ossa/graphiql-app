@@ -1,0 +1,9 @@
+{
+  "src/**/*.{ts,tsx}": [
+    "prettier --write",
+    "tsc-files --noEmit",
+    "eslint --max-warnings 0 --fix"
+  ],
+  "src/**/*.{css,scss}": "prettier --write",
+  "*.{json,html,md}": "prettier --write"
+}
