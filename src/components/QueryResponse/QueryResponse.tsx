@@ -24,6 +24,7 @@ export default function QueryResponse() {
         /* Fucking bug that causes Mozilla Firefox to crash.
          * Can't use editable={false}.
          */
+        editable={false}
         onBeforeInput={(e) => {
           e.preventDefault()
         }}
