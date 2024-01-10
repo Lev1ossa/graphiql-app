@@ -72,8 +72,8 @@ exports[`Correct MainPage snapshot > Correct [MainPage] snapshot 1`] = `
                 <label
                   class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-standard css-1c2i806-MuiFormLabel-root-MuiInputLabel-root"
                   data-shrink="true"
-                  for=":r1:"
-                  id=":r1:-label"
+                  for=":r2:"
+                  id=":r2:-label"
                 >
                   Endpoint
                 </label>
@@ -83,15 +83,16 @@ exports[`Correct MainPage snapshot > Correct [MainPage] snapshot 1`] = `
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
-                    id=":r1:"
+                    id=":r2:"
                     type="text"
                     value="https://countries.trevorblades.com/graphql"
                   />
                 </div>
               </div>
               <button
-                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-5ogm6a-MuiButtonBase-root-MuiButton-root"
-                tabindex="0"
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium css-5ogm6a-MuiButtonBase-root-MuiButton-root"
+                disabled=""
+                tabindex="-1"
                 type="button"
               >
                 <span
@@ -110,9 +111,6 @@ exports[`Correct MainPage snapshot > Correct [MainPage] snapshot 1`] = `
                   </svg>
                 </span>
                 refetch
-                <span
-                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
-                />
               </button>
             </div>
           </div>
@@ -174,12 +172,14 @@ exports[`Correct MainPage snapshot > Correct [MainPage] snapshot 1`] = `
         class="MuiStack-root css-3pn1fb-MuiStack-root"
       >
         <button
-          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-t2oiyv-MuiButtonBase-root-MuiButton-root"
-          tabindex="0"
+          class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiLoadingButton-loading MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall Mui-disabled MuiButton-root MuiLoadingButton-root MuiLoadingButton-loading MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-s7eejy-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root"
+          disabled=""
+          id=":r3:"
+          tabindex="-1"
           type="button"
         >
           <span
-            class="MuiButton-startIcon MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
+            class="MuiButton-startIcon MuiLoadingButton-startIconLoadingStart MuiButton-iconSizeSmall css-y6rp3m-MuiButton-startIcon"
           >
             <svg
               aria-hidden="true"
@@ -192,6 +192,30 @@ exports[`Correct MainPage snapshot > Correct [MainPage] snapshot 1`] = `
                 d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"
               />
             </svg>
+          </span>
+          <span
+            class="MuiLoadingButton-loadingIndicator MuiLoadingButton-loadingIndicatorStart css-8v66ek-MuiLoadingButton-loadingIndicator"
+          >
+            <span
+              aria-labelledby=":r3:"
+              class="MuiCircularProgress-root MuiCircularProgress-indeterminate MuiCircularProgress-colorInherit css-62e83j-MuiCircularProgress-root"
+              role="progressbar"
+              style="width: 16px; height: 16px;"
+            >
+              <svg
+                class="MuiCircularProgress-svg css-1idz92c-MuiCircularProgress-svg"
+                viewBox="22 22 44 44"
+              >
+                <circle
+                  class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate css-176wh8e-MuiCircularProgress-circle"
+                  cx="44"
+                  cy="44"
+                  fill="none"
+                  r="20.2"
+                  stroke-width="3.6"
+                />
+              </svg>
+            </span>
           </span>
           documentation
         </button>
@@ -660,7 +684,8 @@ exports[`Correct MainPage snapshot > Correct MainControls snapshot 1`] = `
       class="MuiStack-root css-3pn1fb-MuiStack-root"
     >
       <button
-        class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-t2oiyv-MuiButtonBase-root-MuiButton-root"
+        class="MuiButtonBase-root MuiButton-root MuiLoadingButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiLoadingButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall css-s7eejy-MuiButtonBase-root-MuiButton-root-MuiLoadingButton-root"
+        id=":r0:"
         tabindex="0"
         type="button"
       >
@@ -966,8 +991,8 @@ exports[`Correct MainPage snapshot > Correct SchemaControls snapshot 1`] = `
         <label
           class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-standard MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-standard css-1c2i806-MuiFormLabel-root-MuiInputLabel-root"
           data-shrink="true"
-          for=":r0:"
-          id=":r0:-label"
+          for=":r1:"
+          id=":r1:-label"
         >
           Endpoint
         </label>
@@ -977,7 +1002,7 @@ exports[`Correct MainPage snapshot > Correct SchemaControls snapshot 1`] = `
           <input
             aria-invalid="false"
             class="MuiInputBase-input MuiInput-input MuiInputBase-inputSizeSmall css-nz481w-MuiInputBase-input-MuiInput-input"
-            id=":r0:"
+            id=":r1:"
             type="text"
             value="https://countries.trevorblades.com/graphql"
           />
