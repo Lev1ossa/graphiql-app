@@ -9,12 +9,18 @@ import { SignUpForm } from '@/components/@SignForm/SignUpForm'
 import { Documentation } from '@/components/Documentation'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { OutlineButton } from '@/components/OutlineButton'
+import { QueryRequest } from '@/components/QueryRequest'
+import { QueryResponse } from '@/components/QueryResponse'
+import ResponseMetrics from '@/components/QueryResponse/ResponseMetrics'
 import { RequestHeaders } from '@/components/RequestHeaders'
+import { RequestVariables } from '@/components/RequestVariables'
 import { SignInPage, SignUpPage } from '@/pages/@SignPages'
 import { ErrorPage } from '@/pages/ErrorPage'
 import { MainPage } from '@/pages/MainPage'
 import { NotFoundPage } from '@/pages/NotFoundPage'
 import { WelcomePage } from '@/pages/WelcomePage'
+import AuthProtected from '@/router/AuthProtected'
 import { Snackbar } from '@mui/material'
 import { expect, test } from 'vitest'
 import renderInContext from './utils/renderInContext'
@@ -38,6 +44,9 @@ const ValidateSnapshots = [
   ['MainPage', <MainPage />],
   ['WelcomePage', <WelcomePage />],
   ['NotFoundPage', <NotFoundPage />],
+  ['OutlineButton', <OutlineButton />],
+  ['ResponseMetrics', <ResponseMetrics />],
+  ['AuthProtected', <AuthProtected />],
 ]
 
 ValidateSnapshots.forEach(([name, jsx]) => {
@@ -45,4 +54,10 @@ ValidateSnapshots.forEach(([name, jsx]) => {
     const { baseElement } = renderInContext(jsx)
     expect(baseElement).toMatchSnapshot()
   })
+})
+
+test('Expect components with react-codemirror instance to throw an Error', () => {
+  expect(() => renderInContext(<QueryRequest />)).toThrowError()
+  expect(() => renderInContext(<QueryResponse />)).toThrowError()
+  expect(() => renderInContext(<RequestVariables />)).toThrowError()
 })
